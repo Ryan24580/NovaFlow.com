@@ -1,0 +1,91 @@
+/* 1. Global Reset - အခြေခံ Style များ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* အကွက်များ Screen မကျော်စေရန် */
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* 2. Header & Logo Layout (Logo ကို အလယ်ပို့ခြင်း) */
+header {
+    display: flex;
+    justify-content: center; /* Logo ကို အလယ်ပို့ရန် */
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+header a {
+    position: absolute; /* Home link ကို ဘယ်ဘက်အစွန်းသို့ ပို့ခြင်း */
+    left: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: dodgerblue;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.logo-div-of-main-movies-grid h2 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.movie-poster-div{
+    display: block;
+}
+.movie-poster{
+    width: 150px;
+}
+.movies-grid-in-a-div{
+    width: 150px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+}
+
+.movie-InFo-div{
+    margin-top: 10px;
+}
+.movie-title{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.movie-rate-country,
+.movie-published-date-text{
+    font-size: 11px;
+    font-weight: bold;
+    color: gray;
+}
+
+.movies-grid-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 35px;
+    margin-left: 45px;
+    margin-top: 40px;
+    row-gap: 20px;
+}
+
+a:hover{
+    color: white;
+    text-shadow: 0px 0px 5px white;
+}
+@media screen and (max-width: 768px){
+    .movies-grid-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 8px;
+        margin-right: 10px;
+    }
+}

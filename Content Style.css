@@ -1,0 +1,63 @@
+*{
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Logo ကို အလယ်ပို့ရန် */
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+header a {
+    position: absolute; /* Home link ကို ဘယ်ဘက်အစွန်းသို့ ပို့ခြင်း */
+    left: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: dodgerblue;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.logo-div-of-main-movies-grid h2 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.movie-of-2025{
+    text-align: center;
+}
+.movie-of-2025 a{
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+a:hover{
+    color: dodgerblue;
+}
+a{
+    margin: 10 10;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .movie-of-2025 a{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+}

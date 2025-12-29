@@ -1,0 +1,54 @@
+*{
+  background-color: black;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+.scroll-menu {
+  background-color: black; /* Google News လို အနက်ရောင် */
+  overflow-x: auto;          /* ဘေးတိုက် Scroll ဆွဲလို့ရအောင် လုပ်တာ */
+  white-space: nowrap;       /* စာသားတွေကို အောက်တစ်ကြောင်း မဆင်းသွားအောင် လုပ်တာ */
+  padding: 5px;
+}
+
+.scroll-menu a {
+  display: inline-block;     /* တစ်ခုချင်းစီ ဘေးတိုက် စီနေအောင် */
+  border: 0.3px solid white;
+  color: #ccc;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.scroll-menu a:hover{
+  background-color: dodgerblue;
+}
+
+/* Scrollbar ကို ဖျောက်ထားချင်ရင် (ပိုလှအောင်) */
+.scroll-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.news-thumbnail{
+  width: 620px;
+}
+.news-info{
+  margin-top: 10px;
+}
+.news-info a{
+  padding: 10px 10px;
+}
+
+.news-main-div{
+  width: 900px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .news-main-div{
+    width: 100%;
+  }
+  .news-thumbnail{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

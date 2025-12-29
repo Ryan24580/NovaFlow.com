@@ -1,0 +1,154 @@
+*{
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Logo ကို အလယ်ပို့ရန် */
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+header a {
+    position: absolute; /* Home link ကို ဘယ်ဘက်အစွန်းသို့ ပို့ခြင်း */
+    left: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: dodgerblue;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.Mv-poster{
+    width: 140px;
+}
+
+.Mv-poster-info-div{
+    display: grid;
+    grid-template-columns: 250px 300px 1fr;
+    column-gap: 30px;
+    margin-top: 30px;
+}
+.Mv-poster-div,
+.Mv-info-div,
+.Mv-thriller-div{
+    display: inline-block;
+    vertical-align: top;
+}
+.Mv-info-div{
+    margin-top: 50px;
+    margin-left: 60px;
+}
+.Mv-thriller-div iframe{
+    border-radius: 5px;
+    border: none;
+}
+
+.Mv-title-of-paragraph{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.Mv-detail-paragraph{
+    margin-top: 25px;
+}
+.Mv-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.Mv-detail-div{
+    margin-top: 25px;
+    text-align: center;
+    width: 1000px;
+}
+.Mv-stats-footer{
+    margin-top: 50px;
+    text-align: center;
+}
+.Mv-stats-footer p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.detail-img{
+    width: 350px;
+}
+.download-link,
+.download-link a{
+    text-decoration: none;
+    background-color: dodgerblue;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+}
+.download-link-div a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: dodgerblue;
+    margin-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.download-link-div{
+    margin-top: 25px;
+}
+.download-link-div a:hover{
+    box-shadow: 0 0 10px dodgerblue;
+}
+
+@media screen and (max-width: 768px) {
+    .Mv-poster{
+        width: 110px;
+    }
+    
+    .Mv-poster-info-div{
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        column-gap: 30px;
+        margin-top: 30px;
+    }
+    .Mv-title{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .Mv-poster-div,
+    .Mv-info-div,
+    .Mv-thriller-div{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    .Mv-info-div{
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+    .Mv-thriller-div iframe{
+        border-radius: 5px;
+        border: none;
+        margin-top: 15px;
+    }
+    .Mv-detail-div{
+        width: 350px;
+    }
+    .Mv-stats-footer{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .Mv-stats-footer p{
+        margin-top: 20px;
+        font-size: 15px;
+        
+    }
+    
+}
